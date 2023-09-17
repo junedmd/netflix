@@ -3,11 +3,11 @@
     padding: 0px;
 }
 
-.footer{
+.main-container{
     background-color: #F9F6EE;
     height: 150px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     color: black;
 }
 ul li{

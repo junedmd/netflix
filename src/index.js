@@ -7,7 +7,6 @@ import Home from './views/home/Home'
 import Contact from './views/contact/Contact';
 import About from './views/about/About';
 
-
 const router =createBrowserRouter([
 {
    path:"/",
@@ -24,9 +23,7 @@ const router =createBrowserRouter([
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
 root.render(
     <>
       <RouterProvider router={router} />
-
    </>)
