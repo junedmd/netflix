@@ -1,20 +1,39 @@
-import Navbar from "./../../components/navbar/Navbar"
-import Footer from "../../components/footer/Footer"
-import Content from "../../components/content/Content"
+import { useState } from "react"
+import "./Home.css"
+import I18n from "./../../utils/i18n"
+export default function Home() {
+  const [lang, setLan] = useState("en")
 
-export default function Home(){
-    return(
-        <>
-        <div>
-        <Navbar/>
-     
-       <Content/>
+  return (
+    <>
+
+      <div className="Cards">
+
+        
+
+        <h2> {I18n("first")}</h2>
+
+        <h3>{I18n("second")}</h3>
+
+        <h3> {I18n("third")}</h3>
+        <h1>juned</h1>
+
+      </div>
+
+      <select
       
-        <Footer/>
+      defaultValue={localStorage.getItem("lang")}
+       onChange={(e) => {
+        localStorage.setItem("lang", e.target.value);
+        window.location.reload();
       
-            
-        </div>
-        </>
-    )
+      }} className='dropdown'>
+        <option value={"en"}>English</option>
+        <option value={"hi"}>hindi</option>
+        <option value={"mr"}>marathi</option>
+      </select>
+
+    </>
+  )
 
 }

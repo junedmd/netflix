@@ -1,0 +1,17 @@
+{
+    "en":{
+        "first":"The sun is shining brightly in the sky.",
+        "second":" I love to listen to music while working.",
+        "third":"The Taj Mahal is a symbol of love."
+    },
+    "hi":{
+        "first":"आसमान में सूरज चमक रहा है।",
+        "second":"मैं काम करते समय संगीत सुनना पसंद करता हूँ।",
+        "third":"ताजमहल प्रेम का प्रतीक है।"
+    },
+    "mr":{
+        "first":"आकाशात सूर्य प्रकाशमय आहे.",
+        "second":"मला काम करताना संगीत ऐकणे आवडतंय.",
+        "third":"ताजमहल प्रेमाची कला आहे."
+    }
+}
