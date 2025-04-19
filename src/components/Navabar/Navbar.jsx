@@ -5,18 +5,22 @@ import search_icon from "../../assets/search_icon.svg";
 import bell_icon from "../../assets/bell_icon.svg";
 import prof_img from '../../assets/profile_img.png'
 import dropdown_icon from '../../assets/caret_icon.svg'
+import {Link} from "react-router"
 function Navbar(){
+    
     return(
         <>
         <div className="navbar">
             <div className="nav-left">
-                <img src={logo} alt="" className=""/>
+                <img src={logo} alt="" className="" />
+                
                 <ul>
                     <li>Home</li>
                     <li>Tv Shows</li>
                     <li>New & Popular</li>
                     <li>My list</li>
                     <li>Browse by Languages</li>
+                    <li><Link to="/login" className="Navbar_a">Login</Link></li>
 
                 </ul>
             </div>

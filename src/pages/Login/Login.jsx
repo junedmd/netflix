@@ -4,9 +4,13 @@ import Logo from "./../../assets/logo.png"
 function Login() {
 
   const [signState,setSignState]=useState('Login')
+  
+  const directCall =()=>{
+    window.location.href ="/"
+}
   return (
     <div className='login'>
-      <img src={Logo} alt="" className='logo'/>
+      <img src={Logo} alt="" className='logo' onClick={directCall}/>
       <div className="login-form">
         <h1>{signState} </h1>
         <form action="">

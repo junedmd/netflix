@@ -19,7 +19,7 @@ function Home() {
             <img src={title} alt=""  className='caption-img'/>
             <p>Discover his ties to a secret ancient order,a young man living in mdern Istanbul embarks on a quest to a city from an immortal enemy</p>
             <div className="hero-btns">
-                <button className='btn'>
+                <button className='btn sm-btn'>
                      <img src={play_icon} alt=''/>
                      Play
                 </button>
