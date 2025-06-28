@@ -5,9 +5,15 @@ import search_icon from "../../assets/search_icon.svg";
 import bell_icon from "../../assets/bell_icon.svg";
 import prof_img from '../../assets/profile_img.png'
 import dropdown_icon from '../../assets/caret_icon.svg'
-import {Link} from "react-router"
+import {Link} from "react-router";
 function Navbar(){
     
+    const logout=()=>{
+        
+                    localStorage.removeItem("user");
+                    window.location.href ="/"
+                
+    }
     return(
         <>
         <div className="navbar">
@@ -32,7 +38,7 @@ function Navbar(){
                 <img src={prof_img} alt="search-icon" className="profile"/>
                 <img src={dropdown_icon} alt="search-icon" className=""/>
                 <div className="dropdown">
-                    <p> Logout</p>
+                    <p onClick={logout}> Logout</p>
                 </div>
                 </div>
                 
